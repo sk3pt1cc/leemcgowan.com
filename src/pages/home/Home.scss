@@ -1,0 +1,47 @@
+$size: 80%;
+$padding: ((100 - $size )/ 2);
+$background-color: #404040;
+
+.home {
+    padding: $padding;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+    background: url("/img/leemcgowan_background.jpg");
+    &-content {
+        background-color: $background-color;
+        display: flex;
+        border: 1px solid whitesmoke;
+        padding: 32px;
+        border-radius: 40px;
+        box-shadow: 3px 4px 5px 0px whitesmoke;
+    }
+    &__col {
+        flex: 1;
+    }
+    &__profile-img {
+        max-width: 70%;
+        margin-left: 15%;
+        border-radius: 50%;
+        margin-top: 7%;
+        border: 1px solid black;
+    }
+    &__intro-header {
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    &__intro-body {
+        margin-top: 50px;
+    }
+    &__intro-contact {
+        margin-top: 50px;
+        &-icon {
+            padding: 16px;
+            text-decoration: none;
+            color: white;
+            &:hover, &:active { text-decoration: none; color:grey }
+        }
+    }
+}
